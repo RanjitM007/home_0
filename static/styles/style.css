@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    height: 75px;
+}
+.icon{
+    width: 500px;
+    height: 70px;
+float: left;
+}
+.logo{
+    color: rgb(216, 230, 22);
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float:left;
+    height: 70px;
+}
+ul{
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    font-size: 14px;
+    margin-top: 27px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family:Arial ;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: red;
+}
+.search{
+    width: 330px;
+    float:left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width:200px ;
+    height: 40px;
+    background: transparent;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float:left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background:orange;
+    border: 2px solid orange;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px
+
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.srch:hover{
+    background:gray;
+}
+
+.content{
+    width: 50%;
+    height:auto;
+    margin: auto;
+    color: white;
+    position: relative;
+     
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+    
+
+content .cn{
+    width: 160px;
+    height: 40px;
+    background: orange;
+    border: none;
+}
+.content2 span{
+    font: size 80px;;
+    color:rgb(6, 43, 250);
+    line-height: 1.4;
+    letter-spacing: 0.5em;
+    font-weight: bold;
+    margin-top: 80px;
+    align-items: center;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+    0%{opacity:0;}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+.maindiv{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(./image/001.jpg);
+    box-shadow: 1px 2px 30px 5px yellow;
+    animation:slider 12s infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url(../image/01.jpg);}
+    25%{background-image: url(../image/001.jpg);}
+    
+    50%{
+        background-image: url(../image/02.jpg);
+    }
+    100%{
+        background-image: url(../image/03.jpg);
+    }
+    }
